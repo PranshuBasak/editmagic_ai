@@ -26,9 +26,8 @@ const MediaUploader = ({onValueChange , setImage , image , publicId , type}: Med
             publicId: result?.info?.public_id,
             width: result?.info?.width,
             height: result?.info?.height,
-            secureUrl: result?.info?.secureUrl,
+            secureURL: result?.info?.secure_url,
         }))
-        
         onValueChange(result?.info?.public_id)
 
         toast({
